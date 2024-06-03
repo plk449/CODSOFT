@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-image: url("image.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 600px;
+
+}
+
+#navbar ul li {
+
+
+    width: 80px;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    text-decoration: none;
+    padding: 18px;
+    margin: 3px;
+
+
+}
+
+#navbar ul li:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(72, 152, 222);
+}
+
+#navbar ul li a {
+    color: rgb(72, 152, 222);
+    text-decoration: none;
+    font-size: larger;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#logo div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#one {
+    color: rgb(140, 198, 242);
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#two {
+
+    text-transform: uppercase;
+    color: rgb(173, 222, 183);
+    font-size: 80px;
+}
+
+#three {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#logo button {
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 20px;
+}
+
+#logo button:hover {
+
+    background-color: rgb(225, 225, 82);
+}
+
+#service {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#place_head p {
+    text-align: center;
+    color: rgb(184, 238, 68);
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+#images {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+#images div {
+    height: 750px;
+    width: 400px;
+}
+
+#mount,
+#ocean,
+#desert {
+    padding: 8px;
+    width: 400px;
+    height: 600px;
+
+}
+
+#images div div p {
+    padding: 8px;
+
+}
+
+#images div:hover {
+    opacity: 0.8;
+
+    transition: all 0.4s;
+}
+
+#about {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 241, 230);
+    flex-direction: column;
+}
+
+#about i {
+    font-size: 40px;
+}
+
+#about p {
+    font-size: 30px;
+    text-align: center;
+}
+
+#contact {
+    margin-top: 15px;
+    background-image: url(download.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact p {
+    color: white;
+    font-size: x-large;
+    margin: 8px;
+}
+
+#contact button {
+    background-color: yellow;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 20px;
+}
+
+#contact button:hover {
+
+    background-color: rgb(225, 225, 82);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+footer .social-media a:hover {
+    cursor: pointer;
+
+    text-decoration: underline;
+    text-decoration-color: rgb(246, 247, 249);
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        height: 400px;
+    }
+
+    #navbar ul {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    #navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #logo {
+        padding: 20px;
+    }
+
+    #one {
+        font-size: 30px;
+    }
+
+    #two {
+        font-size: 50px;
+    }
+
+    #three {
+        font-size: 16px;
+    }
+
+    #images {
+        flex-direction: column;
+    }
+
+    #images div {
+        width: 100%;
+        height: auto;
+    }
+
+    #about p {
+        font-size: 20px;
+    }
+
+    #contact p {
+        font-size: large;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 300px;
+    }
+
+    #navbar {
+        width: 100%;
+        /* display: none; */
+    }
+
+    #navbar ul {
+        padding: 2px;
+    }
+
+    #navbar ul li a {
+        font-size: small;
+    }
+
+    #logo {
+        padding: 4px;
+    }
+
+    #one {
+        font-size: 20px;
+    }
+
+    #two {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #three {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #about p {
+        font-size: 18px;
+    }
+
+    #contact p {
+        font-size: medium;
+    }
+}
